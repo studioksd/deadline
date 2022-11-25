@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons'
 import reportWebVitals from './reportWebVitals';
+import Header from './components/Header';
+import Capsule from './components/Capsule'
+import App from './App'
 
+library.add(faPlay, faPause);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Header />
+    <Capsule/>
     <App />
   </React.StrictMode>
 );

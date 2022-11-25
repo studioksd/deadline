@@ -1,0 +1,55 @@
+.beatButton {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    border: 3px outset rgba(161, 158, 158, 0.623);
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 1%;
+}
+
+.beatCover {
+    display:block;
+    width: 100%;
+    object-fit: cover
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1%;
+}
+
+p {
+    margin: 2% 0 0 0;
+    text-transform: uppercase;
+    font-size: small;
+    font-style: italic;
+}
+
+.play {
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    color: rgb(209, 209, 209);
+}
+
+.pause {
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    color: rgb(209, 209, 209);
+}
+
+.multiplayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
